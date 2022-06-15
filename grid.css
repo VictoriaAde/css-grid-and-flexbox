@@ -89,7 +89,7 @@ body {
     width: 80%;
   }
   .item {
-    padding: 2rem 1.5rem 3rem;
+    padding: 2rem 1.5rem 4rem;
   }
   .luxury {
     grid-column: span 2;
