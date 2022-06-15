@@ -78,5 +78,6 @@ body {
 @media (max-width: 900px) {
   .container {
     display: block;
+    width: 90%;
   }
 }

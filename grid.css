@@ -86,7 +86,7 @@ body {
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 70%;
+    width: 90%;
   }
   .item {
     padding: 2rem 1.5rem 3rem;
