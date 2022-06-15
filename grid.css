@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
 
 :root {
-  --orange-bg-color: hsla(186, 73%, 15%, 0.767);
-  --cyan-bg-color: hsl(52, 84%, 17%);
-  --dark-cyan-bg-color: hsl(325, 81%, 11%);
+  --dark-cyan-bg-color: hsla(186, 73%, 15%, 0.767);
+  --dark-yellow-bg-color: hsl(52, 84%, 17%);
+  --dark-pink-cyan-bg-color: hsl(325, 81%, 11%);
   --transparent-white: hsla(0, 0%, 100%, 0.75);
   --light-gray: hsl(0, 0%, 95%);
   --body-font-size: 15px;
@@ -46,13 +46,13 @@ body {
 }
 
 .sedans {
-  background-color: var(--orange-bg-color);
+  background-color: var(--dark-cyan-bg-color);
 }
 .suvs {
-  background-color: var(--cyan-bg-color);
+  background-color: var(--dark-yellow-bg-color);
 }
 .luxury {
-  background-color: var(--dark-cyan-bg-color);
+  background-color: var(--dark-pink-cyan-bg-color);
 }
 
 .learn-more {
@@ -75,7 +75,7 @@ body {
   text-transform: capitalize;
   color: var(--light-gray);
   padding: 0.7rem 1.6rem;
-  background-color: var(--dark-cyan-bg-color);
+  background-color: hsl(179, 100%, 13%);
   margin-left: auto;
   cursor: pointer;
 }
