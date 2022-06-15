@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
 
 :root {
-  --orange-bg-color: hsl(31, 77%, 52%);
-  --cyan-bg-color: hsl(184, 100%, 22%);
-  --dark-cyan-bg-color: hsl(179, 100%, 13%);
+  --orange-bg-color: hsla(186, 73%, 15%, 0.767);
+  --cyan-bg-color: hsl(52, 84%, 17%);
+  --dark-cyan-bg-color: hsl(325, 81%, 11%);
   --transparent-white: hsla(0, 0%, 100%, 0.75);
   --light-gray: hsl(0, 0%, 95%);
   --body-font-size: 15px;
