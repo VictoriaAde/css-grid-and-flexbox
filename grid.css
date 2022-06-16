@@ -1,10 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
-
 :root {
-  --dark-cyan-bg-color: hsla(186, 73%, 15%, 0.767);
-  --dark-yellow-bg-color: hsl(52, 84%, 17%);
-  --dark-pink-cyan-bg-color: hsl(325, 81%, 11%);
-  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --dark-cyan-bg-color: hsl(179, 100%, 13%);
   --light-gray: hsl(0, 0%, 95%);
   --body-font-size: 15px;
 }
@@ -19,52 +14,52 @@ body {
 }
 
 .container {
-  width: 60%;
-  margin: 7rem auto;
+  width: 84%;
+  margin: 5rem auto;
+  padding-bottom: 4rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  grid-template-areas:
+    "one one two"
+    "one one two"
+    "three four four"
+    "three five five";
 }
-
 .item {
-  color: var(--transparent-white);
-  padding: 2rem 1.5rem 4rem;
+  /* width: 350px; */
+  height: 280px;
+  align-items: stretch;
 }
-.item h1 {
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 2.2rem;
-  font-family: "Big Shoulders Display", cursive;
-  font-weight: 700;
-}
-.item p {
-  font-size: var(--body-font-size);
-  font-family: "Lexend Deca", sans-serif;
-  font-weight: 400;
-  letter-spacing: 1px;
-  margin-bottom: 4.5rem;
-  line-height: 1.5em;
+.one {
+  background-color: rgb(194, 28, 28);
+  grid-area: one;
+  width: 40em;
 }
 
-.sedans {
-  background-color: var(--dark-cyan-bg-color);
-}
-.suvs {
-  background-color: var(--dark-yellow-bg-color);
-}
-.luxury {
-  background-color: var(--dark-pink-cyan-bg-color);
+.two {
+  background-color: hsl(52, 84%, 17%);
+  grid-area: two;
+  width: 27em;
 }
 
-.learn-more {
-  border-radius: 30px;
-  padding: 0.7rem 1.6rem;
-  background-color: var(--light-gray);
-  text-decoration: none;
-  font-size: var(--body-font-size);
-  font-family: "Lexend Deca", sans-serif;
-  font-weight: 400;
-  text-transform: capitalize;
-  cursor: pointer;
+.three {
+  background-color: hsl(52, 84%, 17%);
+  grid-area: three;
+  width: 30em;
+}
+
+.four {
+  background-color: hsl(325, 81%, 11%);
+  grid-area: four;
+  width: 37em;
+  height: 125px;
+}
+
+.five {
+  background-color: hsl(325, 81%, 11%);
+  grid-area: five;
+  width: 37em;
+  height: 141px;
 }
 
 .btn {
@@ -75,33 +70,26 @@ body {
   text-transform: capitalize;
   color: var(--light-gray);
   padding: 0.7rem 1.6rem;
-  background-color: hsl(179, 100%, 13%);
+  background-color: var(--dark-cyan-bg-color);
   margin-left: auto;
   cursor: pointer;
 }
+
 .btn:hover {
   color: #e3dcdcd5;
 }
-@media (max-width: 900px) {
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 80%;
-  }
-
-  .luxury {
-    grid-column: span 2;
-    margin-bottom: 2rem;
-  }
-  .luxury p {
-    margin-bottom: 2rem;
-  }
-}
 @media (max-width: 500px) {
   .container {
-    display: block;
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four"
+      "five";
   }
-  .item p {
-    margin-bottom: 4.5rem;
+  .item {
+    width: 350px;
+    height: 280px;
+    align-items: stretch;
   }
 }
