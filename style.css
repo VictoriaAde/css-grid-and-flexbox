@@ -16,13 +16,14 @@ body {
   width: 100%;
 }
 .container {
-  width: 60%;
+  width: 70%;
   margin: 7rem auto;
   display: flex;
 }
 .item {
   color: var(--transparent-white);
-  padding: 2rem 1.5rem 4rem;
+  padding: 3.3rem 2rem 4rem;
+  flex-basis: 300px;
 }
 .item h1 {
   font-weight: bold;
@@ -42,11 +43,26 @@ body {
 .sedans {
   background-color: var(--orange-bg-color);
 }
+.sedans .learn-more:hover {
+  background-color: var(--orange-bg-color);
+  color: #fff;
+  border: solid 1px #fff;
+}
 .suvs {
   background-color: var(--cyan-bg-color);
 }
+.suvs .learn-more:hover {
+  background-color: var(--cyan-bg-color);
+  color: #fff;
+  border: solid 1px #fff;
+}
 .luxury {
   background-color: var(--dark-cyan-bg-color);
+}
+.luxury .learn-more:hover {
+  background-color: var(--dark-cyan-bg-color);
+  color: #fff;
+  border: solid 1px #fff;
 }
 .learn-more {
   border-radius: 30px;
@@ -58,7 +74,9 @@ body {
   font-weight: 400;
   text-transform: capitalize;
   cursor: pointer;
+  transition: all ease-in 0.2s;
 }
+
 .btn {
   text-decoration: none;
   font-size: var(--body-font-size);

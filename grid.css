@@ -14,10 +14,11 @@ body {
 }
 
 .container {
-  width: 84%;
+  width: 100%;
   margin: 5rem auto;
   padding-bottom: 4rem;
   display: grid;
+  justify-content: center;
   gap: 1rem;
   grid-template-areas:
     "one one two"
@@ -33,32 +34,32 @@ body {
 .one {
   background-color: rgb(194, 28, 28);
   grid-area: one;
-  width: 40em;
+  width: 35em;
 }
 
 .two {
   background-color: hsl(52, 84%, 17%);
   grid-area: two;
-  width: 27em;
+  width: 23em;
 }
 
 .three {
   background-color: hsl(52, 84%, 17%);
   grid-area: three;
-  width: 30em;
+  width: 25em;
 }
 
 .four {
   background-color: hsl(325, 81%, 11%);
   grid-area: four;
-  width: 37em;
+  width: 33em;
   height: 125px;
 }
 
 .five {
   background-color: hsl(325, 81%, 11%);
   grid-area: five;
-  width: 37em;
+  width: 33em;
   height: 141px;
 }
 
